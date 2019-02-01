@@ -4,11 +4,11 @@ import time
 import hashlib
 from selenium.common.exceptions import NoSuchElementException
 
-from my_framework.log import Logger
+from logs.Log import MyLog
 
 
 # create a logger instance
-logger = Logger(logger="BasePage").getlog()
+#logger = Logger(logger="BasePage").getlog()
 
 
 class BasePage(object):
@@ -60,8 +60,7 @@ class BasePage(object):
         proDir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
         file_path = os.path.join(proDir, "my_report\\report_picture")
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
-        s = int(time.time() * 1000)
-        rq1 = hashlib.md5().update(s.encode(encoding='utf-8'))
+
         screen_name = file_path + rq + '.png'
         try:
             self.driver.get_screenshot_as_file(screen_name)
