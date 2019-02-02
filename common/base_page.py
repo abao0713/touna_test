@@ -3,12 +3,11 @@ import os.path
 import time
 
 from selenium.common.exceptions import NoSuchElementException
-
 from logs.Log import MyLog
 
 
-# create a logger instance
-#logger = Logger(logger="BasePage").getlog()
+log = MyLog.get_log(logger="BasePage")
+Logger = log.get_logger()
 
 
 class BasePage(object):
@@ -20,7 +19,6 @@ class BasePage(object):
         self.driver = driver
 
         # quit browser and end testing
-
     def quit_browser(self):
         self.driver.quit()
 
@@ -28,28 +26,28 @@ class BasePage(object):
 
     def forward(self):
         self.driver.forward()
-        logger.info("Click forward on current page.")
+        Logger.info("Click forward on current page.")
 
         # 浏览器后退操作
 
     def back(self):
         self.driver.back()
-        logger.info("Click back on current page.")
+        Logger.info("Click back on current page.")
 
         # 隐式等待
 
     def wait(self, seconds):
         self.driver.implicitly_wait(seconds)
-        logger.info("wait for %d seconds." % seconds)
+        Logger.info("wait for %d seconds." % seconds)
 
         # 点击关闭当前窗口
 
     def close(self):
         try:
             self.driver.close()
-            logger.info("Closing and quit the browser.")
+            Logger.info("Closing and quit the browser.")
         except NameError as e:
-            logger.error("Failed to quit the browser with %s" % e)
+            Logger.error("Failed to quit the browser with %s" % e)
 
             # 保存图片
 
@@ -64,9 +62,9 @@ class BasePage(object):
         screen_name = file_path + rq + '.png'
         try:
             self.driver.get_screenshot_as_file(screen_name)
-            logger.info("Had take screenshot and save to folder : /report_picture")
+            Logger.info("Had take screenshot and save to folder : /report_picture")
         except NameError as e:
-            logger.error("Failed to take report_picture! %s" % e)
+            Logger.error("Failed to take report_picture! %s" % e)
             self.get_windows_img()
 
             # 定位元素方法
@@ -89,10 +87,10 @@ class BasePage(object):
         if selector_by == "i" or selector_by == 'id':
             try:
                 element = self.driver.find_element_by_id(selector_value)
-                logger.info("Had find the element \' %s \' successful "
+                Logger.info("Had find the element \' %s \' successful "
                             "by %s via value: %s " % (element.text, selector_by, selector_value))
             except NoSuchElementException as e:
-                logger.error("NoSuchElementException: %s" % e)
+                Logger.error("NoSuchElementException: %s" % e)
                 self.get_windows_img()  # take screenshot
         elif selector_by == "n" or selector_by == 'name':
             element = self.driver.find_element_by_name(selector_value)
@@ -107,10 +105,10 @@ class BasePage(object):
         elif selector_by == "x" or selector_by == 'xpath':
             try:
                 element = self.driver.find_element_by_xpath(selector_value)
-                logger.info("Had find the element \' %s \' successful "
+                Logger.info("Had find the element \' %s \' successful "
                             "by %s via value: %s " % (element.text, selector_by, selector_value))
             except NoSuchElementException as e:
-                logger.error("NoSuchElementException: %s" % e)
+                Logger.error("NoSuchElementException: %s" % e)
                 self.get_windows_img()
         elif selector_by == "s" or selector_by == 'selector_selector':
             element = self.driver.find_element_by_css_selector(selector_value)
@@ -127,9 +125,9 @@ class BasePage(object):
         el.clear()
         try:
             el.send_keys(text)
-            logger.info("Had type \' %s \' in inputBox" % text)
+            Logger.info("Had type \' %s \' in inputBox" % text)
         except NameError as e:
-            logger.error("Failed to type in input box with %s" % e)
+            Logger.error("Failed to type in input box with %s" % e)
             self.get_windows_img()
 
             # 清除文本框
@@ -139,9 +137,9 @@ class BasePage(object):
         el = self.find_element(selector)
         try:
             el.clear()
-            logger.info("Clear text in input box before typing.")
+            Logger.info("Clear text in input box before typing.")
         except NameError as e:
-            logger.error("Failed to clear in input box with %s" % e)
+            Logger.error("Failed to clear in input box with %s" % e)
             self.get_windows_img()
 
             # 点击元素
@@ -151,27 +149,27 @@ class BasePage(object):
         el = self.find_element(selector)
         try:
             el.click()
-            logger.info("The element \' %s \' was clicked." % el.text)
+            Logger.info("The element \' %s \' was clicked." % el.text)
         except NameError as e:
-            logger.error("Failed to click the element with %s" % e)
+            Logger.error("Failed to click the element with %s" % e)
 
             # 或者网页标题
     def send_key(self,selector,str):
         el = self.find_element(selector)
         try:
             el.send_keys(str)
-            logger.info("The string \' %s \' was send." % el.text)
+            Logger.info("The string \' %s \' was send." % el.text)
         except NameError as e:
-            logger.error("Failed to send the string with %s" % e)
+            Logger.error("Failed to send the string with %s" % e)
 
     def get_page_title(self):
-        logger.info("Current page title is %s" % self.driver.title)
+        Logger.info("Current page title is %s" % self.driver.title)
         return self.driver.title
 
     @staticmethod
     def sleep(seconds):
         time.sleep(seconds)
-        logger.info("Sleep for %d seconds" % seconds)
+        Logger.info("Sleep for %d seconds" % seconds)
 
 if __name__ == '__main__':
     b="xpath=>.//*[@class='el-button el-button--primary el-button--mini']/span[text()='导入案件']"

@@ -1,44 +1,51 @@
 from common.base_page import *
-from selenium import webdriver
 import yaml
+dir = os.path.dirname(os.path.abspath('.'))  # 注意相对路径获取方法
+file_path = dir + '/config_file/touna.yaml'
+print(file_path)
+with open(file_path,'r',encoding="UTF-8") as file:
 
+    try:
+        yaml_data = yaml.load(file)
+    except:
+        print("open yaml is no")
+print(yaml_data)
 
 class touna(BasePage):
     # 操作
     # 通过继承覆盖（Overriding）方法：如果子类和父类的方法名相同，优先用子类自己的方法。
     # 打开网页
-    # 使用minidom解析器打开 XML 文档
-    filename = os.path.join(os.path.dirname('.'), 'touna.yaml').replace("\\", "/")
-    print(filename)
-
-    def open(self):
-        # 调用page中的_open打开连接
-        self._open(self.base_url, self.pagetitle)
-
+    def open_login(self):
+        self.login_url = yaml_data["login"]["login_url"]
+        self.find_element(*self.login_url).click()
+    #输入账户类型
+    def choose_type(self,logo):
+        self.usertype_one = yaml_data["login"]["usertype_one"]
+        self.usertype_second = yaml_data["login"]["usertype_second"]
+        if logo == '1':
+            self.find_element(*self.usertype_one).click()
+        else:
+            self.find_element(*self.usertype_second).click()
     # 输入用户名：调用send_keys对象，输入用户名
     def input_username(self, username):
-        self.find_element(*self.username_loc).clear()
-        self.find_element(*self.username_loc).send_keys(username)
+        self.username = yaml_data["login"]["username"]
+        self.find_element(*self.username).clear()
+        self.find_element(*self.username).send_keys(username)
 
     # 输入密码：调用send_keys对象，输入密码
     def input_password(self, password):
-        #        self.find_element(*self.password_loc).clear()
-        self.find_element(*self.password_loc).send_keys(password)
+        self.password = yaml_data["login"]["password"]
+        self.find_element(*self.password).clear()
+        self.find_element(*self.password).send_keys(password)
 
     # 点击登录：调用send_keys对象，点击登录
     def click_submit(self):
-        self.find_element(*self.submit_loc).click()
+        self.button = yaml_data["login"]["button"]
+        self.find_element(*self.button).click()
 
-    # 用户名或密码不合理是Tip框内容展示
-    def show_span(self):
-        return self.find_element(*self.span_loc).text
-
-    # 切换登录模式为动态密码登录（IE下有效）
-    def swich_DynPw(self):
-        self.find_element(*self.dynpw_loc).click()
-
-    # 登录成功页面中的用户ID查找
-    def show_userid(self):
-        return self.find_element(*self.userid_loc).text
+    # 身份校验认证弹窗处理
+    def alert_cancel(self):
+        self.alert_cancel = yaml_data["login"]["alert_cancel"]
+        return self.find_element(*self.alert_cancel).click()
 
 
