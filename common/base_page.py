@@ -1,7 +1,7 @@
 # coding=utf-8
 import os.path
 import time
-import hashlib
+
 from selenium.common.exceptions import NoSuchElementException
 
 from logs.Log import MyLog
