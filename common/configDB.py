@@ -1,6 +1,6 @@
 import pymysql
-import readConfig as readConfig
-from commonsrc.Log import MyLog as Log
+from common import readConfig
+from logs.Log import MyLog
 
 localReadConfig = readConfig.ReadConfig()
 
@@ -21,8 +21,8 @@ class MyDB:
     }
 
     def __init__(self):
-        self.log = Log.get_log()
-        self.logger = self.log.get_logger()
+        self.log = MyLog.get_log(logger="MyDB")
+        self.Logger = self.log.get_logger()
         self.db = None
         self.cursor = None
 
@@ -38,7 +38,7 @@ class MyDB:
             self.cursor = self.db.cursor()
             print("Connect DB successfully!")
         except ConnectionError as ex:
-            self.logger.error(str(ex))
+            self.Logger.error(str(ex))
 
     def executeSQL(self, sql, params):
         """

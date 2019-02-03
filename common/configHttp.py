@@ -1,7 +1,7 @@
 import requests
 import readConfig as readConfig
-from commonsrc.Log import MyLog as Log
-from commonsrc.login import testlogin
+from logs.Log import MyLog
+from common.login import testlogin
 import requests
 
 
