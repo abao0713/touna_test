@@ -79,15 +79,16 @@ class Log(object):
         """
         self.logger.info(case_name+"----msg:"+msg)
 
-    def get_report_path(self):
+    def get_result_path(self):
         """
         get report file path
         :return:
         """
-        report_path = os.path.join(logPath, "report.html")
+        path = os.path.join(proDir, "my_report")
+        report_path = os.path.join(path, "my_report.html")
         return report_path
 
-    def get_result_path(self):
+    def get_report_path(self):
         """
         get test result path
         :return:

@@ -7,8 +7,8 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from datetime import datetime
 import threading
-import readConfig as readConfig
-from commonsrc.Log import MyLog
+from common import readConfig as readConfig
+from logs.Log import MyLog
 import zipfile
 import glob
 
@@ -35,10 +35,10 @@ class Email:
 
         # defined email subject
         date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        self.subject = "接口测试报告" + " " + date
+        self.subject = "touna_test_ui_report" + " " + date
 
-        self.log = MyLog.get_log()
-        self.logger = self.log.get_logger()
+        self.log = MyLog.get_log(logger="Email")
+        self.Logger = self.log.get_logger()
         self.msg = MIMEMultipart('related')
 
     def config_header(self):
@@ -55,7 +55,7 @@ class Email:
         write the content of email
         :return:
         """
-        f = open(os.path.join(readConfig.proDir, 'testFile', 'emailStyle.txt'))
+        f = open(os.path.join(readConfig.proDir, 'config_file', 'emailStyle.txt'))
         content = f.read()
         f.close()
         content_plain = MIMEText(content, 'html', 'UTF-8')
@@ -68,7 +68,7 @@ class Email:
         :return:
         """
         # defined image path
-        image1_path = os.path.join(readConfig.proDir, 'testFile', 'img', 'logo.png')
+        image1_path = os.path.join(readConfig.proDir, 'config_file','logo.png')
         fp1 = open(image1_path, 'rb')
         msgImage1 = MIMEImage(fp1.read())
         # self.msg.attach(msgImage1)
@@ -78,7 +78,7 @@ class Email:
         msgImage1.add_header('Content-ID', '<image1>')
         self.msg.attach(msgImage1)
 
-        image2_path = os.path.join(readConfig.proDir, 'testFile', 'img', 'image2.png')
+        image2_path = os.path.join(readConfig.proDir, 'config_file','image2.png')
         fp2 = open(image2_path, 'rb')
         msgImage2 = MIMEImage(fp2.read())
         # self.msg.attach(msgImage2)
@@ -97,8 +97,8 @@ class Email:
         # if the file content is not null, then config the email file
         if self.check_file():
 
-            reportpath = self.log.get_result_path()
-            zippath = os.path.join(readConfig.proDir, "result", "test.zip")
+            reportpath = self.log.get_report_path()
+            zippath = os.path.join(readConfig.proDir, "result_log", "test.zip")
 
             # zip file
             files = glob.glob(reportpath + '\*')
@@ -140,9 +140,9 @@ class Email:
             smtp.login(user, password)
             smtp.sendmail(sender, self.receiver, self.msg.as_string())
             smtp.quit()
-            self.logger.info("The test report has send to developer by email.")
+            self.Logger.info("The test report has send to developer by email.")
         except Exception as ex:
-            self.logger.error(str(ex))
+            self.Logger.error(str(ex))
 
 
 class MyEmail:

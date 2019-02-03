@@ -62,5 +62,7 @@ if __name__ == "__main__":
     # runner.run(suite)
     filename = 'E:\工作文档\工作资料\\touna_test\my_report\my_report.html'
     fp = open(filename, 'wb')
-    runner = HTMLTestRunner.HTMLTestRunner(fp, title=u'my unit test', description=u'This is a report test',verbosity=2)
-    runner.run(suite)
+
+    #runner = HTMLTestRunner.HTMLTestRunner(fp, title=u'my unit test', description=u'This is a report test',verbosity=2)
+    #runner.run(suite)
+    BeautifulReport(suite).report(filename='百度测试报告', description='搜索测试', log_path='.')

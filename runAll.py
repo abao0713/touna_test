@@ -1,23 +1,26 @@
 import os
 import unittest
-from logs.Log import MyLog as Log
-import readConfig as readConfig
-from  common import HTMLTestRunner
+from logs.Log import MyLog
+from common import readConfig as readConfig
+from common import HTMLTestRunner
 from common.configEmail import MyEmail
+from BeautifulReport import BeautifulReport
+
 
 localReadConfig = readConfig.ReadConfig()
 
 
 class AllTest:
     def __init__(self):
-        global log, logger, resultPath, on_off
-        log = Log.get_log()
-        logger = log.get_logger()
-        resultPath = log.get_report_path()
+        global log, Logger, resultPath, on_off,report_path
+        log = MyLog.get_log(logger="AllTest")
+        Logger = log.get_logger()
+        report_path = log.get_report_path()
+        #resultPath = log.get_result_path()
         on_off = localReadConfig.get_email("on_off")
-        self.caseListFile = os.path.join(readConfig.proDir, "caselist.txt")
+        self.caseListFile = os.path.join(readConfig.proDir, "config_file\\testlist.ini")
         #accept file test
-        self.caseFile = os.path.join(readConfig.proDir, "testCase")
+        self.caseFile = os.path.join(readConfig.proDir, "test_case")
 
         print(self.caseFile)
 
@@ -40,7 +43,7 @@ class AllTest:
             fb.close()
 
         except:
-            logger.info("缺少文件")
+            Logger.info("the testlist.ini file is lose")
         return self.caseList
 
     def set_case_suite(self):
@@ -49,7 +52,7 @@ class AllTest:
         :return:
         """
         if self.set_case_list() == None:
-            logger.info("this caseList,s file is none")
+            Logger.info("this testlist,s file is none")
         else:
             self.set_case_list()
 
@@ -58,10 +61,10 @@ class AllTest:
 
 
         for case in self.caseList:
-            case_name = case.split("/")[-1]
+            #case_name = case.split("/")[-1]
             #print(self.caseFile + '\\product')
 
-            discover = unittest.defaultTestLoader.discover(self.caseFile+'\\product', pattern=case_name + '.py', top_level_dir=None)
+            discover = unittest.defaultTestLoader.discover(self.caseFile, pattern=case + '.py', top_level_dir=None)
             suite_module.append(discover)
 
 
@@ -72,7 +75,7 @@ class AllTest:
                     test_suite.addTest(test_name)
 
         else:
-            logger.info("not test case find")
+            Logger.info("not test case find")
             return None
 
         return test_suite
@@ -85,24 +88,28 @@ class AllTest:
         try:
             suit = self.set_case_suite()
             if suit is not None:
-                logger.info("********TEST START********")
-                fp = open(resultPath, 'wb+')
+                Logger.info("********TEST START********")
+                #fp = open(resultPath, 'wb+')
+                """
                 runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='Test Report', description='Test Description',verbosity=2)
                 runner.run(suit)
+                """
+                result = BeautifulReport(suit)
+                result.report(filename='touna_test_report', description='touna', log_path=report_path)
             else:
-                logger.info("Have no case to test.")
+                Logger.info("Have no case to test.")
         except Exception as ex:
-            logger.error(str(ex))
+            Logger.error(str(ex))
         finally:
-            logger.info("*********TEST END*********")
-            fp.close()
+            Logger.info("*********TEST END*********")
+            #fp.close()
             # send test report by email
             if on_off == 'on':
                 self.email.send_email()
             elif on_off == 'off':
-                logger.info("Doesn't send report email to developer.")
+                Logger.info("Doesn't send report email to developer.")
             else:
-                logger.info("Unknow state.")
+                Logger.info("Unknow state.")
 
 
 if __name__ == '__main__':
