@@ -1,7 +1,7 @@
 # coding=utf-8
 import os.path
-import time
-
+from datetime import datetime
+import time,random
 from selenium.common.exceptions import NoSuchElementException
 from logs.Log import MyLog
 
@@ -56,15 +56,21 @@ class BasePage(object):
         在这里我们把file_path这个参数写死，直接保存到我们项目根目录的一个文件夹.\Screenshots下
         """
         proDir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-        file_path = os.path.join(proDir, "my_report\\report_picture")
-        rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
+        resultPath = os.path.join(proDir, "result_log")
 
-        screen_name = file_path + rq + '.png'
+        logPath = os.path.join(resultPath, str(datetime.now().strftime("%Y%m%d%H%M")))
+        path = os.path.join(resultPath, logPath)
+        rq = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
+        #通过随机取数实现文件命名唯一
+        randomNum = random.randint(0,100)
+        if randomNum <= 10:
+            randomNum = str(0) + str(randomNum)
+        screen_name =path + '\\' + rq + '_' + str(randomNum) + '.png'
         try:
             self.driver.get_screenshot_as_file(screen_name)
-            Logger.info("Had take screenshot and save to folder : /report_picture")
+            Logger.info("Had take screenshot and save to folder : /result_log")
         except NameError as e:
-            Logger.error("Failed to take report_picture! %s" % e)
+            Logger.error("Failed to take result_log! %s" % e)
             self.get_windows_img()
 
             # 定位元素方法

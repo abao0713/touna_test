@@ -19,7 +19,7 @@ class Log(object):
         resultPath = os.path.join(proDir, "result_log")
         if not os.path.exists(resultPath):
             os.mkdir(resultPath)
-        logPath = os.path.join(resultPath, str(datetime.now().strftime("%Y%m%d%H%M%S")))
+        logPath = os.path.join(resultPath, str(datetime.now().strftime("%Y%m%d%H%M")))
         if not os.path.exists(logPath):
             os.mkdir(logPath)
 
@@ -28,7 +28,6 @@ class Log(object):
         self.logger.setLevel(logging.DEBUG)
 
         # 创建一个handler，用于写入日志文件
-        rq = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
         # log_path = os.path.dirname(os.getcwd()) + '/Logs/'  # 项目根目录下/Logs 保存日志
         #log_path = os.path.dirname(os.path.abspath('.')) + '/logs/'
         # 如果case组织结构式 /testsuit/featuremodel/xxx.py ， 那么得到的相对路径的父路径就是项目根目录

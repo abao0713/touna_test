@@ -1,20 +1,36 @@
 from common.select_browser import BrowserEngine
 from elements.touna_elements import touna
-from common.base_page import *
+import unittest
+import time
 
-class login(BasePage):
+class Test_login(unittest.TestCase):
+    def setUp(self):
+        """
+        初始化浏览器
+        :return:
+        """
+        browser = BrowserEngine(self)
+        self.driver = browser.open_browser(self)
+    def tearDown(self):
+        """
+        测试结束后关闭浏览器
+        :return:
+        """
+        self.driver.quit()
+
     def test_login(self):
-        touna.open_login()
-        touna.choose_type(1)
-        touna.input_username()
-        touna.input_password()
-        touna.click_submit()
-        touna.alert_cancel()
+        Touna=touna(self.driver)
+        Touna.open_login()
+        time.sleep(3)
+        Touna.choose_type(0)
+        Touna.input_username("15270239931")
+        Touna.input_password("a305634841")
+        Touna.click_submit()
+        Touna.alert_cancel()
 
 
 if __name__ == "__main__":
-    a=login()
-    a.test_login()
+    unittest.main()
 
 
 
