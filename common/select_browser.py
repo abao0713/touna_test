@@ -12,9 +12,9 @@ Logger = log.get_logger()
 
 class BrowserEngine():
     dir = os.path.dirname(os.path.abspath('.'))  # 注意相对路径获取方法
-    chrome_driver_path = dir + '/datafile/chromedriver.exe'
-    ie_driver_path = dir + '/datafile/IEDriverServer.exe'
-    firefox_driver = dir + '/datafile/geckodriver.exe'
+    chrome_driver_path = (dir + '/touna_test/datafile/chromedriver.exe').replace("\\","/")
+    ie_driver_path = (dir + '/touna_test/datafile/IEDriverServer.exe').replace("\\","/")
+    firefox_driver = (dir + '/touna_test/datafile/geckodriver.exe').replace("\\","/")
 
     def __init__(self, driver):
         self.driver = driver
@@ -53,6 +53,3 @@ class BrowserEngine():
     def quit_browser(self):
         Logger.info("Now, Close and quit the browser.")
         self.driver.quit()
-if __name__ == "__main__":
-    a=BrowserEngine()
-    a.open_browser()
