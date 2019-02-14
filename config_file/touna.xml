@@ -1,0 +1,26 @@
+<!-- create date=20190202 --> 
+<touna>
+	<login>
+		<login1>xpath="//a[contains(text(),'登录')]"</login1> <!--首页登录按钮 --> 
+		<checkout>xpath=""</checkout> <!--登录成功检查点 -->
+		<usertype1>xpath="//span[@id='invest']"</usertype1> <!--登录账户类型（我是出借人）定位点 -->
+		<usertype2>xpath="//span[@id='borrow']"</usertype2> <!--登录账户类型（我是借款人）定位点 -->
+		<username>xpath="//span[contains(text(),'请输入您的手机号/邮箱/用户名')]"</username> <!--登录输入账户的定位点 -->
+		<password>xpath="//span[contains(text(),'请输入您的登录密码')]"</password> <!--登录输入密码的定位点 -->
+		<button>xpath="//input[@id='btn_login']"</button> <!--登录确认按钮 -->
+		<cancel>xpath="//a[@class='span iconfont f12']"</cancel> <!--初始用户弹框去除 -->
+		<><>
+		<><>
+		<><>
+		<><>
+	</login>
+	<logout>
+		<><>
+		<><>
+		<><>
+		<><>
+		<><>
+		<><>
+		<><>
+	</logout>
+</touna>
