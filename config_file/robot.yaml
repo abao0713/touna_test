@@ -1,0 +1,54 @@
+#robot
+login:
+  #<!--登录输入账户的定位点 -->
+  username: xpath=>//input[@type='text']
+  #<!--登录输入密码的定位点 -->
+  password: xpath=>//input[@type='password']
+  #<!--登录确认按钮 -->
+  button: xpath=>//button[@type='button']
+  #<!--登录成功检查点 -->
+  login_success: xpath=>//div[@id='header']/div[2]
+logout:
+  #<!--登录退出的定位点 -->
+  logout:.css=>.el-menu-item
+importcase:
+  #<!--批次管理进入的定位点 -->
+  entry: xpath=>//li[@class='el-submenu is-active']//i[@class='el-submenu__icon-arrow el-icon-arrow-down']
+  #<!--当前批次进入的定位点 -->
+  current: xpath=>//li[contains(text(),'当前批次')]
+  #<!--历史批次进入的定位点 -->
+  history: xpath=>//li[contains(text(),'历史批次')]
+  #<!--暂停批次 -->
+  end_case: xpath=>//span[contains(text(),'暂停批次')]
+  #<!--执行批次 -->
+  statr_case: xpath=>//span[contains(text(),'执行批次')]
+  #<!--取消批次 -->
+  cacel_case: xpath=>//span[contains(text(),'取消批次')]
+  #<!--创建批次 -->
+  create_case: xpath=>//span[contains(text(),'创建批次')]
+  #<!--创建批次之批次名称 -->
+  case_content: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='4']
+  #<!--创建批次之呼叫策略 -->
+  case_strategy: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='5']
+  #<!--创建批次之选择呼叫策略 -->
+  strategy01: xpath=>////span[contains(text(),'权限测试01')]
+  #<!--创建批次之选择线路数量 -->
+  line: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='6']
+  #<!--创建批次之呼叫开始时间 -->
+  call: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='7']
+  time_start: xpath=>//div[@class='el-scrollbar__view']/div[contains(text(),'09:30')]
+  #<!--创建批次之呼叫结束时间 -->
+  call01: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='8']
+  time_end: 
+  #<!--创建批次之产品类型 -->
+  xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='9']
+  #<!--查询之批次名称 -->
+  case_name: xpath=>//input[@placeholder='请输入批次名称']
+  #<!--查询之批次状态 -->
+  
+ 
+  #<!--创建批次之发送短信 -->
+  
+  #<!--创建批次之发送频率 -->
+  
+  
