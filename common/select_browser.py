@@ -24,8 +24,9 @@ class BrowserEngine():
     def open_browser(self, driver):
         config = ConfigParser()
         #file_path1 = os.path.dirname(os.getcwd()) + '/config_file/config.ini'
-        file_path = os.path.dirname(os.path.abspath('.')) + '/config_file/config.ini'
-        config.read(file_path)
+        proDir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        configPath = os.path.join(proDir, "config_file\config.ini")
+        config.read(configPath)
         browser = config.get("browserType", "browserName")
         Logger.info("You had select %s browser." % browser)
         url = config.get("testServer", "URL")
