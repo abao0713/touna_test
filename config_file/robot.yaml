@@ -41,7 +41,7 @@ importcase:
   call01: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='8']
   time_end: 
   #<!--创建批次之产品类型 -->
-  xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='9']
+  #xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='9']
   #<!--查询之批次名称 -->
   case_name: xpath=>//input[@placeholder='请输入批次名称']
   #<!--查询之批次状态 -->

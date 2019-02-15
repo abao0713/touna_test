@@ -13,8 +13,8 @@ with open(file_path,'r',encoding="UTF-8") as file:
 
     try:
         yaml_data = yaml.load(file)
-    except:
-        print("open yaml is no")
+    except Exception as e:
+        print(e)
 print(yaml_data)
 
 class touna(BasePage):

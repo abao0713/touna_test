@@ -61,10 +61,11 @@ class AllTest:
 
 
         for case in self.caseList:
-            #case_name = case.split("/")[-1]
-            #print(self.caseFile + '\\product')
+            case_name = case.split("/")[-1]
+            path = case.split("/")[0]
+            print(self.caseFile+'\\'+path)
 
-            discover = unittest.defaultTestLoader.discover(self.caseFile, pattern=case + '.py', top_level_dir=None)
+            discover = unittest.defaultTestLoader.discover(self.caseFile+'\\'+path, pattern=case_name + '.py', top_level_dir=None)
             suite_module.append(discover)
 
 
@@ -95,7 +96,7 @@ class AllTest:
                 runner.run(suit)
                 """
                 result = BeautifulReport(suit)
-                result.report(filename='touna_test_report', description='touna', log_path=report_path)
+                result.report(filename='robot_test_report', description='robot', log_path=report_path)
             else:
                 Logger.info("Have no case to test.")
         except Exception as ex:

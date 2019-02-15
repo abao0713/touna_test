@@ -29,8 +29,8 @@ class Test_login(unittest.TestCase):
         Touna.alert_cancel()
 
 
-if __name__ == "__main__":
-    unittest.main()
+#if __name__ == "__main__":
+  #  unittest.main()
 
 
 
