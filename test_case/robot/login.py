@@ -7,19 +7,21 @@ import unittest
 log = MyLog.get_log(logger="Login")
 Logger = log.get_logger()
 class Login(unittest.TestCase):
-    def setUp(self):
+    @classmethod
+    def setUpClass(cls):
         """
         初始化浏览器
         :return:
         """
-        browser = BrowserEngine(self)
-        self.driver = browser.open_browser(self)
-    def tearDown(self):
+        browser = BrowserEngine(cls)
+        cls.driver = browser.open_browser(cls)
+    @classmethod
+    def tearDownClass(cls):
         """
         测试结束后关闭浏览器
         :return:
         """
-        self.driver.quit()
+        cls.driver.quit()
 
     def test_login(self):
         Robot = robot(self.driver)
@@ -30,6 +32,10 @@ class Login(unittest.TestCase):
             Logger.info('登录成功，账户名为aybj')
         else:
             Logger.info('登录失败')
+    def test_logout(self):
+        Robot = robot(self.driver)
+        Robot.log_out()
+
 
 if __name__ == '__main__':
     unittest.main()

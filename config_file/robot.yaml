@@ -10,7 +10,8 @@ login:
   login_success: xpath=>//div[@class='words']
 logout:
   #<!--登录退出的定位点 -->
-  logout:.css=>.el-menu-item
+  move: xpath=>//ul[@class='el-menu-demo el-menu--horizontal el-menu']//i[@class='el-submenu__icon-arrow el-icon-arrow-down']
+  logout: xpath=>html/body/div[2]/ul/li[2]
 importcase:
   #<!--批次管理进入的定位点 -->
   entry: xpath=>//li[@class='el-submenu is-active']//i[@class='el-submenu__icon-arrow el-icon-arrow-down']
@@ -50,5 +51,32 @@ importcase:
   #<!--创建批次之发送短信 -->
   
   #<!--创建批次之发送频率 -->
+set:
+  #<!--设置进入的定位点 -->
+  entry: xpath=>html/body/div[1]/div/div[1]/div/div[2]/ul/li[7]/div
+  #<!--呼叫规则设置定位点 -->
+  call: xpath=>//li[contains(text(),'呼叫规则设置')]
+  #<!--呼叫规则设置定位点 -->
+  
+  #<!--呼叫规则设置定位点 -->
+  
+  #<!--呼叫规则设置定位点 -->
+  
+  
+  
+  #<!--跳转规则设置定位点 -->
+  jump: xpath=>//li[contains(text(),'跳转规则设置')]
+  #<!--停催规则设置定位点 -->
+  stop: xpath=>//li[contains(text(),'停催规则设置')]
+  #<!--客群综合评分设置定位点 -->
+  group: xpath=>//li[contains(text(),'客群综合评分设置')]
+  
+  
+  
+  
+  
+  
+  
+  
   
   

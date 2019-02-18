@@ -1,4 +1,5 @@
 from common.base_page import *
+from selenium.webdriver.common.action_chains import  ActionChains
 import yaml
 from selenium.webdriver.common.keys import Keys
 from logs.Log import MyLog
@@ -48,3 +49,9 @@ class robot(BasePage):
             return True
         else:
             return False
+    def log_out(self):
+        self.move = yaml_data['logout']['move']
+        self.logout = yaml_data['logout']['logout']
+        botton = self.find_element(self.move)
+        ActionChains(self.driver).move_to_element(botton).perform()
+        self.find_element(self.logout).click()
