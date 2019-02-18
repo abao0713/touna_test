@@ -6,8 +6,9 @@ from logs.Log import MyLog
 
 log = MyLog.get_log(logger="touna")
 Logger = log.get_logger()
-dir = os.path.dirname(os.path.abspath('.'))  # 注意相对路径获取方法
-file_path = (dir + '/touna_test/config_file/touna.yaml').replace("\\","/")
+dir = os.path.dirname(os.path.abspath(__file__)) # 注意相对路径获取方法
+dir_base = os.path.dirname(dir)
+file_path = (dir_base + '/config_file/touna.yaml').replace("\\","/")
 print(file_path)
 with open(file_path,'r',encoding="UTF-8") as file:
 

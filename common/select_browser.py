@@ -11,10 +11,11 @@ log = MyLog.get_log(logger="BrowserEngine")
 Logger = log.get_logger()
 
 class BrowserEngine():
-    dir = os.path.dirname(os.path.abspath('.'))  # 注意相对路径获取方法
-    chrome_driver_path = (dir + '/touna_test/datafile/chromedriver.exe').replace("\\","/")
-    ie_driver_path = (dir + '/touna_test/datafile/IEDriverServer.exe').replace("\\","/")
-    firefox_driver = (dir + '/touna_test/datafile/geckodriver.exe').replace("\\","/")
+    dir = os.path.dirname(os.path.abspath(__file__))  # 注意相对路径获取方法
+    dir_base = os.path.dirname(dir)
+    chrome_driver_path = (dir_base + '/datafile/chromedriver.exe').replace("\\","/")
+    ie_driver_path = (dir_base + '/datafile/IEDriverServer.exe').replace("\\","/")
+    firefox_driver = (dir_base + '/datafile/geckodriver.exe').replace("\\","/")
 
     def __init__(self, driver):
         self.driver = driver

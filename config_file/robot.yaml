@@ -7,7 +7,7 @@ login:
   #<!--登录确认按钮 -->
   button: xpath=>//button[@type='button']
   #<!--登录成功检查点 -->
-  login_success: xpath=>//div[@id='header']/div[2]
+  login_success: xpath=>//div[@class='words']
 logout:
   #<!--登录退出的定位点 -->
   logout:.css=>.el-menu-item

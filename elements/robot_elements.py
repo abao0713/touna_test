@@ -5,11 +5,14 @@ from logs.Log import MyLog
 
 
 
+#log = MyLog.get_log(logger="robot")
+#Logger = log.get_logger()
+dir = os.path.dirname(os.path.abspath(__file__)) # 注意相对路径获取方法
+dir_base = os.path.dirname(dir)
+file_path = (dir_base + '/config_file/robot.yaml').replace("\\","/")
+print(file_path)
 log = MyLog.get_log(logger="robot")
 Logger = log.get_logger()
-dir = os.path.dirname(os.path.abspath('.'))  # 注意相对路径获取方法
-file_path = (dir + '/touna_test/config_file/robot.yaml').replace("\\","/")
-print(file_path)
 with open(file_path,'r',encoding="UTF-8") as file:
 
     try:
@@ -40,8 +43,8 @@ class robot(BasePage):
         self.find_element(self.button).click()
     def login_success(self):
         self.login_success = yaml_data['login']['login_success']
-        a=self.find_element(self.login_success).text()
-        if a == input_username(self,username):
+        a=self.find_element(self.login_success).text
+        if a == '欢迎使用智能语音管理系统':
             return True
         else:
             return False

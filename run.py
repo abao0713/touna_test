@@ -1,7 +1,7 @@
 
 import unittest
 from parameterized import parameterized
-from common import HTMLTestRunner
+from test_case.robot import login
 
 
 class Testadd(unittest.TestCase):
@@ -52,17 +52,7 @@ class Testadd(unittest.TestCase):
         self.assertEqual(result, p)
 
 if __name__ == "__main__":
-    # suite = unittest.TestSuite()
-    # suite.addTest(Testadd('test_add'))
-    # suite.addTest(Testadd('test_sub'))
-    # suite.addTests([Testadd('test_add'), Testadd('test_sub'), Testadd('test_err')])
-    suite = unittest.makeSuite(Testadd)
-    # suite = unittest.TestLoader().loadTestsFromTestCase(Testadd)
-    # runner = unittest.TextTestRunner()
-    # runner.run(suite)
-    filename = 'E:\工作文档\工作资料\\touna_test\my_report\my_report.html'
-    fp = open(filename, 'wb')
-
-    #runner = HTMLTestRunner.HTMLTestRunner(fp, title=u'my unit test', description=u'This is a report test',verbosity=2)
-    #runner.run(suite)
-    BeautifulReport(suite).report(filename='百度测试报告', description='搜索测试', log_path='.')
+    suite = unittest.TestSuite()
+    suite.addTest(login.Login('test_login'))
+    runner = unittest.TextTestRunner()
+    runner.run(suite)
