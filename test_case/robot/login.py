@@ -25,11 +25,11 @@ class Login(unittest.TestCase):
 
     def test_login(self):
         Robot = robot(self.driver)
-        Robot.input_username('aybj')
+        Robot.input_username('test03')
         Robot.input_password('Aa123456')
         Robot.submit()
         if Robot.login_success():
-            Logger.info('登录成功，账户名为aybj')
+            Logger.info('登录成功，账户名为test03')
         else:
             Logger.info('登录失败')
     def test_logout(self):
