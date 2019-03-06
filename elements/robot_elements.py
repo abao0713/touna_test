@@ -3,7 +3,7 @@ from selenium.webdriver.common.action_chains import  ActionChains
 import yaml
 from selenium.webdriver.common.keys import Keys
 from logs.Log import MyLog
-from common.comsrc import *
+
 
 
 
@@ -89,7 +89,7 @@ class robot(BasePage):
         botton = self.find_element(self.move)
         ActionChains(self.driver).move_to_element(botton).perform()
         self.find_element(self.logout).click()
-    @element_verify
+
     def entry_set(self):
         """
         进入到设置模块
@@ -99,20 +99,59 @@ class robot(BasePage):
         self.find_element(self.entry).click()
     def call_set(self):
         self.call = yaml_data['set']['call']
-        self.find_element(self.call_set()).click()
+        self.find_element(self.call).click()
+
+
 
 
 
 
     def call_edit(self):
         """
+        对每一个呼叫规则名称末尾添加字符串a
 
+        完成编辑后继续回滚操作
         :return:
         """
         self.call_edit = yaml_data['set']['call_edit']
+        self.call_select = yaml_data['set']['call_select']
+        self.call_num = yaml_data['set']['call_num']
+        self.call_name = yaml_data['set']['call_name']
+        self.call_submit = yaml_data['set']['call_submit']
 
-        elements = self.find_elements(self.call_edit)
-        for element in elements:
-            element.click()
+        self.find_element(self.call_edit).click()
+        handles = self.driver.window_handles
+        self.driver.switch_to.window(handles[1])
+        num = self.find_element(self.call_num).text
+        element = self.find_element(self.call_name)
+        for i in range(50):
+            element.send_keys(Keys.ARROW_RIGHT)
+        element.send_keys('a')
+        js = "var q=document.documentElement.scrollTop=100000"
+        self.driver.execute_script(js)
+        time.sleep(3)
+        self.find_element(self.call_submit).click()
+        Logger.info("呼叫编号为%s编辑完成"%num)
+        self.driver.close()
+        #回到之前的编辑标签页
+        self.driver.switch_to.window(handles[0])
+        element.click()
+        handles = self.driver.window_handles
+        self.driver.switch_to.window(handles[1])
+        num = self.find_element(self.call_num).text
+        element = self.find_element(self.call_name)
+        for i in range(50):
+            element.send_keys(Keys.ARROW_RIGHT)
+        element.send_keys(Keys.BACKSPACE)
+        js = "var q=document.documentElement.scrollTop=100000"
+        self.driver.execute_script(js)
+        time.sleep(3)
+        self.find_element(self.call_submit).click()
+        Logger.info("呼叫编号为%s编辑回滚完成" % num)
+        self.driver.close()
+        # 回到之前的编辑标签页
+        self.driver.switch_to.window(handles[0])
+
+
 
 

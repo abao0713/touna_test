@@ -56,13 +56,17 @@ set:
   entry: xpath=>html/body/div[1]/div/div[1]/div/div[2]/ul/li[7]/div
   #<!--呼叫规则设置定位点 -->
   call: xpath=>//li[contains(text(),'呼叫规则设置')]
-  #<!--呼叫规则设置定位点 -->
-  
-  #<!--呼叫规则设置定位点 -->
-  
-  #<!--呼叫规则设置定位点 -->
-  
-  
+  #<!--呼叫规则编号elements -->
+  call_edit: xpath=>//div//div//div//div[@class='el-table__fixed-right']//tbody//tr[1]//td[6]//div[1]//button[1]
+  #<!--呼叫规则一天多次定位点 -->
+  call_select: xpath=>//input[@value='1']
+  #<!--呼叫规则编号获取定位点 -->
+  call_num: xpath=>//div[@class='el-form-item el-form-item--small']/[@class='el-form-item__content']
+  #<!--呼叫规则名称获取定位点 -->
+  call_name: xpath=>//input[@type='text']
+  #<!--呼叫规则编辑提交定位点 -->
+  call_submit: xpath=>//span[contains(text(),'确认')]
+  #<!--呼叫规则编号获取定位点 -->
   
   #<!--跳转规则设置定位点 -->
   jump: xpath=>//li[contains(text(),'跳转规则设置')]
@@ -70,7 +74,7 @@ set:
   stop: xpath=>//li[contains(text(),'停催规则设置')]
   #<!--客群综合评分设置定位点 -->
   group: xpath=>//li[contains(text(),'客群综合评分设置')]
-  
+
   
   
   
