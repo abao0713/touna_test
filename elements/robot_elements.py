@@ -97,14 +97,11 @@ class robot(BasePage):
         """
         self.entry = yaml_data['set']['entry']
         self.find_element(self.entry).click()
+
+# 设置的呼叫规则编辑测试开始
     def call_set(self):
         self.call = yaml_data['set']['call']
         self.find_element(self.call).click()
-
-
-
-
-
 
     def call_edit(self):
         """
@@ -114,10 +111,10 @@ class robot(BasePage):
         :return:
         """
         self.call_edit = yaml_data['set']['call_edit']
-        self.call_select = yaml_data['set']['call_select']
         self.call_num = yaml_data['set']['call_num']
         self.call_name = yaml_data['set']['call_name']
         self.call_submit = yaml_data['set']['call_submit']
+        self.call_success = yaml_data['set']['call_success']
 
         self.find_element(self.call_edit).click()
         handles = self.driver.window_handles
@@ -131,27 +128,100 @@ class robot(BasePage):
         self.driver.execute_script(js)
         time.sleep(3)
         self.find_element(self.call_submit).click()
-        Logger.info("呼叫编号为%s编辑完成"%num)
-        self.driver.close()
-        #回到之前的编辑标签页
-        self.driver.switch_to.window(handles[0])
-        element.click()
-        handles = self.driver.window_handles
-        self.driver.switch_to.window(handles[1])
-        num = self.find_element(self.call_num).text
-        element = self.find_element(self.call_name)
-        for i in range(50):
-            element.send_keys(Keys.ARROW_RIGHT)
-        element.send_keys(Keys.BACKSPACE)
-        js = "var q=document.documentElement.scrollTop=100000"
-        self.driver.execute_script(js)
-        time.sleep(3)
-        self.find_element(self.call_submit).click()
-        Logger.info("呼叫编号为%s编辑回滚完成" % num)
         self.driver.close()
         # 回到之前的编辑标签页
         self.driver.switch_to.window(handles[0])
+        text = self.find_element(self.call_success).text
+        if 'a' in text:
+            Logger.info("呼叫编号为%s编辑完成"%num)
+            #继续进行回滚操作
+            self.find_element(self.call_edit).click()
+            handles = self.driver.window_handles
+            self.driver.switch_to.window(handles[1])
+            num = self.find_element(self.call_num).text
+            element = self.find_element(self.call_name)
+            for i in range(50):
+                element.send_keys(Keys.ARROW_RIGHT)
+            element.send_keys(Keys.BACKSPACE)
+            js = "var q=document.documentElement.scrollTop=100000"
+            self.driver.execute_script(js)
+            time.sleep(3)
+            self.find_element(self.call_submit).click()
+            self.driver.close()
+            # 回到之前的编辑标签页
+            self.driver.switch_to.window(handles[0])
+            text2 = self.find_element(self.call_success).text
+            if 'a' not in text2:
+                Logger.info("呼叫编号为%s编辑回滚完成" % num)
+            else:
+                Logger.info("回滚失败")
+        else:
+            Logger.info("呼叫规则编辑用例执行失败")
 
+# 设置的呼叫规则编辑测试完成
+    def call_create(self):
+        """
+        涉及到数据库的先暂停
+        :return:
+        """
+        self.call_create = yaml_data['set']['call_create']
 
+        self.find_element(self.call_create).click()
+#设置的跳转规则编辑测试开始
+    def jump_set(self):
+        self.jump = yaml_data['set']['jump']
+        self.find_element(self.jump).click()
 
+    def jump_edit(self):
+        """
+                对每一个呼叫规则名称末尾添加字符串a
 
+                完成编辑后继续回滚操作
+                :return:
+                """
+        self.jump_edit = yaml_data['set']['jump_edit']
+        self.jump_name = yaml_data['set']['jump_name']
+        self.jump_submit = yaml_data['set']['jump_submit']
+        self.jump_success = yaml_data['set']['jump_success']
+
+        self.find_element(self.jump_edit).click()
+        handles = self.driver.window_handles
+        self.driver.switch_to.window(handles[1])
+        element = self.find_element(self.jump_name)
+        for i in range(50):
+            element.send_keys(Keys.ARROW_RIGHT)
+        element.send_keys('a')
+        js = "var q=document.documentElement.scrollTop=100000"
+        self.driver.execute_script(js)
+        time.sleep(3)
+        self.find_element(self.jump_submit).click()
+        self.driver.close()
+        # 回到之前的编辑标签页
+        self.driver.switch_to.window(handles[0])
+        text = self.find_element(self.jump_success).text
+        if assertIn('a', text):
+            Logger.info("跳转规则编辑用例成功")
+            # 继续进行回滚操作
+            self.find_element(self.jump_edit).click()
+            handles = self.driver.window_handles
+            self.driver.switch_to.window(handles[1])
+            element = self.find_element(self.jump_name)
+            for i in range(50):
+                element.send_keys(Keys.ARROW_RIGHT)
+            element.send_keys(Keys.BACKSPACE)
+            js = "var q=document.documentElement.scrollTop=100000"
+            self.driver.execute_script(js)
+            time.sleep(3)
+            self.find_element(self.jump_submit).click()
+            self.driver.close()
+            # 回到之前的编辑标签页
+            self.driver.switch_to.window(handles[0])
+            text2 = self.find_element(self.jump_success).text
+            if assertNotIn('a', text2):
+                Logger.info("跳转规则编辑回滚完成")
+            else:
+                Logger.info("回滚失败")
+        else:
+            Logger.info("跳转规则用例执行失败")
+
+# 设置的跳转规则编辑测试完成

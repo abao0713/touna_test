@@ -32,13 +32,12 @@ class Login(unittest.TestCase):
             Logger.info('登录成功，账户名为test01')
         else:
             Logger.info('登录失败')
-    def test2_call_set(self):
+    def test2_jump_set(self):
         Robot = robot(self.driver)
         Robot.entry_set()
+        Robot.jump_set()
         time.sleep(3)
-        Robot.call_set()
-        time.sleep(3)
-        Robot.call_edit()
+        Robot.jump_edit()
 
 
     def test3_logout(self):
