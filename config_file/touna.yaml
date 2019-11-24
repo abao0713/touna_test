@@ -1,0 +1,19 @@
+#touna
+login:
+  #<!--首页登录按钮 --> 
+  login_url: xpath=>//a[contains(text(),'登录')]
+  #<!--登录成功检查点 -->
+  checkout: xpath=>
+  #<!--登录账户类型（我是出借人）定位点 -->
+  usertype_one: xpath=>//span[@id='invest']
+  #<!--登录账户类型（我是借款人）定位点 -->
+  usertype_second: xpath=>//span[@id='borrow']
+  #<!--登录输入账户的定位点 -->
+  username: xpath=>/html[1]/body[1]/div[2]/div[1]/div[1]/ul[1]/li[3]/span[1]
+  #<!--登录输入密码的定位点 -->
+  password: xpath=>//span[contains(text(),'请输入您的登录密码')]
+  #<!--登录确认按钮 -->
+  button: xpath=>//input[@id='btn_login']
+  #<!--初始用户弹框去除 -->
+  alert_cancel: xpath=>//a[@class='span iconfont f12']
+  

@@ -11,10 +11,11 @@ log = MyLog.get_log(logger="BrowserEngine")
 Logger = log.get_logger()
 
 class BrowserEngine():
-    dir = os.path.dirname(os.path.abspath('.'))  # 注意相对路径获取方法
-    chrome_driver_path = dir + '/datafile/chromedriver.exe'
-    ie_driver_path = dir + '/datafile/IEDriverServer.exe'
-    firefox_driver = dir + '/datafile/geckodriver.exe'
+    dir = os.path.dirname(os.path.abspath(__file__))  # 注意相对路径获取方法
+    dir_base = os.path.dirname(dir)
+    chrome_driver_path = (dir_base + '/datafile/chromedriver.exe').replace("\\","/")
+    ie_driver_path = (dir_base + '/datafile/IEDriverServer.exe').replace("\\","/")
+    firefox_driver = (dir_base + '/datafile/geckodriver.exe').replace("\\","/")
 
     def __init__(self, driver):
         self.driver = driver
@@ -24,8 +25,9 @@ class BrowserEngine():
     def open_browser(self, driver):
         config = ConfigParser()
         #file_path1 = os.path.dirname(os.getcwd()) + '/config_file/config.ini'
-        file_path = os.path.dirname(os.path.abspath('.')) + '/config_file/config.ini'
-        config.read(file_path)
+        proDir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        configPath = os.path.join(proDir, "config_file\config.ini")
+        config.read(configPath)
         browser = config.get("browserType", "browserName")
         Logger.info("You had select %s browser." % browser)
         url = config.get("testServer", "URL")
@@ -52,6 +54,3 @@ class BrowserEngine():
     def quit_browser(self):
         Logger.info("Now, Close and quit the browser.")
         self.driver.quit()
-if __name__ == "__main__":
-    a=BrowserEngine()
-    a.open_browser()

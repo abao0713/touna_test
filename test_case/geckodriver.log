@@ -1,0 +1,420 @@
+1549160262661	geckodriver	INFO	geckodriver 0.19.0
+1549160262669	geckodriver	INFO	Listening on 127.0.0.1:48958
+1549160265850	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.DskxNWZgFB06"
+1549160268292	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549160270362	Marionette	INFO	Enabled via --marionette
+[Parent 6488] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12584] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12584] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549160280205	Marionette	INFO	Listening on port 49429
+1549160280647	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549160280888	Marionette	DEBUG	Register listener.js for window 6442450945
+1549160281421	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549160282637	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549160282637	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549160286211	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549160287324	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549160287387	Marionette	INFO	New connections will no longer be accepted
+[Child 12864] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12864] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549160408769	geckodriver	INFO	geckodriver 0.19.0
+1549160408780	geckodriver	INFO	Listening on 127.0.0.1:1960
+1549160411869	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.pVFMzxDdLAKw"
+1549160412166	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549160413186	Marionette	INFO	Enabled via --marionette
+[Parent 4744] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12980] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12980] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549160418560	Marionette	INFO	Listening on port 2339
+1549160419248	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549160419284	Marionette	DEBUG	Register listener.js for window 4294967297
+1549160419321	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549160420102	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549160420103	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549160420916	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549160422955	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549160431928	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1549160516556	Marionette	DEBUG	Register listener.js for window 4294967304
+1549160530439	Marionette	INFO	New connections will no longer be accepted
+1549160624882	geckodriver	INFO	geckodriver 0.19.0
+1549160624887	geckodriver	INFO	Listening on 127.0.0.1:27712
+1549160627945	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.CJuJXODy7isU"
+1549160628243	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549160629508	Marionette	INFO	Enabled via --marionette
+[Child 12396] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12396] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549160634830	Marionette	INFO	Listening on port 28079
+1549160635432	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549160635471	Marionette	DEBUG	Register listener.js for window 4294967297
+1549160635501	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549160636535	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549160636536	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549160637531	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549160638447	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549160638728	Marionette	INFO	New connections will no longer be accepted
+[Parent 12808] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 6388] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+1549160685269	geckodriver	INFO	geckodriver 0.19.0
+1549160685275	geckodriver	INFO	Listening on 127.0.0.1:34932
+1549160688362	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.UBTKyWBE1E5n"
+1549160688849	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549160689968	Marionette	INFO	Enabled via --marionette
+[Parent 12932] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549160695261	Marionette	INFO	Listening on port 35298
+1549160695725	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549160695794	Marionette	DEBUG	Register listener.js for window 4294967297
+1549160695815	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549160696698	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549160696699	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549160697818	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549160698408	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549160698741	Marionette	DEBUG	Register listener.js for window 4294967304
+1549160703989	Marionette	INFO	New connections will no longer be accepted
+1549161206271	geckodriver	INFO	geckodriver 0.19.0
+1549161206276	geckodriver	INFO	Listening on 127.0.0.1:32467
+1549161209346	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.mlRiyjfyGZYq"
+1549161209631	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549161210697	Marionette	INFO	Enabled via --marionette
+[Child 10816] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10816] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549161216746	Marionette	INFO	Listening on port 32842
+1549161217269	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549161217321	Marionette	DEBUG	Register listener.js for window 4294967297
+1549161217352	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549161219909	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549161219909	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549161221060	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549161221668	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549161221961	Marionette	DEBUG	Register listener.js for window 4294967304
+1549161227227	Marionette	INFO	New connections will no longer be accepted
+1549161669513	geckodriver	INFO	geckodriver 0.19.0
+1549161669520	geckodriver	INFO	Listening on 127.0.0.1:23190
+1549161672625	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.YNjOfyDWI78S"
+1549161672955	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549161674310	Marionette	INFO	Enabled via --marionette
+[Parent 13300] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12664] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12664] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549161679851	Marionette	INFO	Listening on port 23576
+1549161680056	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549161680121	Marionette	DEBUG	Register listener.js for window 4294967297
+1549161680151	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549161682769	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549161682770	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549161683937	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549161685162	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967301"
+1549161686090	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549161686637	Marionette	DEBUG	Register listener.js for window 4294967304
+1549161691819	Marionette	INFO	New connections will no longer be accepted
+[Parent 13300] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549161762039	geckodriver	INFO	geckodriver 0.19.0
+1549161762045	geckodriver	INFO	Listening on 127.0.0.1:34287
+1549161765105	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.o4dPkez1qSJN"
+1549161765407	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549161766555	Marionette	INFO	Enabled via --marionette
+[Parent 12580] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13180] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13180] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549161772505	Marionette	INFO	Listening on port 34677
+1549161772568	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549161772611	Marionette	DEBUG	Register listener.js for window 6442450945
+1549161772648	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549161773445	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549161773445	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549161774403	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549161775417	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549161775837	Marionette	DEBUG	Register listener.js for window 6442450952
+1549161781043	Marionette	INFO	New connections will no longer be accepted
+1549162050734	geckodriver	INFO	geckodriver 0.19.0
+1549162050740	geckodriver	INFO	Listening on 127.0.0.1:4329
+1549162053781	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.xc13r9oVV8Ls"
+1549162054095	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549162055121	Marionette	INFO	Enabled via --marionette
+[Child 4680] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4680] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549162060743	Marionette	INFO	Listening on port 4698
+1549162061228	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549162061303	Marionette	DEBUG	Register listener.js for window 4294967297
+1549162061330	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549162064163	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549162064163	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549162065486	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549162066795	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967301"
+1549162067523	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549162067848	Marionette	DEBUG	Register listener.js for window 4294967304
+1549162073083	Marionette	INFO	New connections will no longer be accepted
+1549162176708	geckodriver	INFO	geckodriver 0.19.0
+1549162176714	geckodriver	INFO	Listening on 127.0.0.1:19498
+1549162179748	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.1dmLqfTVAD8i"
+1549162180053	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549162180952	Marionette	INFO	Enabled via --marionette
+[Parent 7852] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9648] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9648] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549162186388	Marionette	INFO	Listening on port 19879
+1549162187094	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549162187141	Marionette	DEBUG	Register listener.js for window 4294967297
+1549162187174	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549162187875	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549162187876	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549162188887	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549162189888	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549162190247	Marionette	DEBUG	Register listener.js for window 4294967304
+1549162195472	Marionette	INFO	New connections will no longer be accepted
+1549162305332	geckodriver	INFO	geckodriver 0.19.0
+1549162305339	geckodriver	INFO	Listening on 127.0.0.1:34912
+1549162308408	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.2GCqdhzeaFUS"
+1549162308739	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549162309804	Marionette	INFO	Enabled via --marionette
+[8832] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+[8832] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 7304] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10760] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10760] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549162315684	Marionette	INFO	Listening on port 35288
+1549162315803	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549162315839	Marionette	DEBUG	Register listener.js for window 4294967297
+1549162315858	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549162316536	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549162316536	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549162318293	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549162319133	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549162319461	Marionette	DEBUG	Register listener.js for window 4294967304
+1549162324700	Marionette	INFO	New connections will no longer be accepted
+[Child 13108] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13108] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549162612112	geckodriver	INFO	geckodriver 0.19.0
+1549162612120	geckodriver	INFO	Listening on 127.0.0.1:7194
+1549162615175	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.fJG2QupK0c6l"
+1549162615519	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549162616669	Marionette	INFO	Enabled via --marionette
+[Child 13092] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13092] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549162622891	Marionette	INFO	Listening on port 7570
+1549162623076	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549162623118	Marionette	DEBUG	Register listener.js for window 4294967297
+1549162623162	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549162623932	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549162623932	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549162624785	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549162625371	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549162625695	Marionette	DEBUG	Register listener.js for window 4294967304
+1549162630918	Marionette	INFO	New connections will no longer be accepted
+1549162672717	geckodriver	INFO	geckodriver 0.19.0
+1549162672723	geckodriver	INFO	Listening on 127.0.0.1:14502
+1549162675784	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.MxHJ8dtbtYAI"
+1549162676101	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549162677180	Marionette	INFO	Enabled via --marionette
+[Child 9200] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9200] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549162682780	Marionette	INFO	Listening on port 14880
+1549162683136	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549162683173	Marionette	DEBUG	Register listener.js for window 4294967297
+1549162683195	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549162684919	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549162684919	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549162685765	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549162686342	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549162686674	Marionette	DEBUG	Register listener.js for window 4294967304
+1549162694898	Marionette	INFO	New connections will no longer be accepted
+[Parent 10664] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549162988800	geckodriver	INFO	geckodriver 0.19.0
+1549162988807	geckodriver	INFO	Listening on 127.0.0.1:52415
+1549162991916	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.D5kd9AG9YHlH"
+1549162992224	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549162993187	Marionette	INFO	Enabled via --marionette
+[Child 11388] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11388] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549163000118	Marionette	INFO	Listening on port 52787
+1549163000274	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549163000312	Marionette	DEBUG	Register listener.js for window 4294967297
+1549163000346	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549163001080	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549163001080	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549163002488	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549163003200	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549163012697	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1549163021783	Marionette	DEBUG	Register listener.js for window 4294967304
+1549163100708	Marionette	INFO	New connections will no longer be accepted
+1549163536635	geckodriver	INFO	geckodriver 0.19.0
+1549163536642	geckodriver	INFO	Listening on 127.0.0.1:53349
+1549163539720	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.kJ0CyN7Rjf0U"
+1549163540015	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549163541112	Marionette	INFO	Enabled via --marionette
+[Child 9252] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9252] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549163546530	Marionette	INFO	Listening on port 53738
+1549163547099	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549163547155	Marionette	DEBUG	Register listener.js for window 4294967297
+1549163547177	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549163548011	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549163548012	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549163549173	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549163549883	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549163550455	Marionette	DEBUG	Register listener.js for window 4294967304
+1549163558421	Marionette	INFO	New connections will no longer be accepted
+[Parent 6148] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549164211037	geckodriver	INFO	geckodriver 0.19.0
+1549164211043	geckodriver	INFO	Listening on 127.0.0.1:4891
+1549164214133	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.swaK3XCF1GbF"
+1549164214424	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549164215484	Marionette	INFO	Enabled via --marionette
+[Child 10692] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10692] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549164220706	Marionette	INFO	Listening on port 5265
+1549164221519	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549164221560	Marionette	DEBUG	Register listener.js for window 4294967297
+1549164221583	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549164222717	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549164222717	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549164224642	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549164226266	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549164226613	Marionette	DEBUG	Register listener.js for window 4294967304
+1549164232921	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1549164234567	Marionette	INFO	New connections will no longer be accepted
+1549164267188	geckodriver	INFO	geckodriver 0.19.0
+1549164267196	geckodriver	INFO	Listening on 127.0.0.1:11715
+1549164270254	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.HHFPpCOA42vR"
+1549164270549	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549164271420	Marionette	INFO	Enabled via --marionette
+[Child 10296] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10296] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549164277022	Marionette	INFO	Listening on port 12079
+1549164277638	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549164277686	Marionette	DEBUG	Register listener.js for window 4294967297
+1549164277709	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549164278528	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549164278529	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549164279484	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549164280489	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549164280793	Marionette	DEBUG	Register listener.js for window 4294967304
+1549164288838	Marionette	INFO	New connections will no longer be accepted
+[Parent 11616] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549164369468	geckodriver	INFO	geckodriver 0.19.0
+1549164369474	geckodriver	INFO	Listening on 127.0.0.1:24025
+1549164372569	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.aH1aLKxi3y0p"
+1549164372894	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549164374045	Marionette	INFO	Enabled via --marionette
+[Parent 12472] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12352] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12352] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549164379480	Marionette	INFO	Listening on port 24389
+1549164380124	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549164380194	Marionette	DEBUG	Register listener.js for window 4294967297
+1549164380227	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549164381084	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549164381085	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549164382266	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549164382684	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549164382983	Marionette	DEBUG	Register listener.js for window 4294967304
+1549164390980	Marionette	INFO	New connections will no longer be accepted
+[Child 9788] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549164714206	geckodriver	INFO	geckodriver 0.19.0
+1549164714212	geckodriver	INFO	Listening on 127.0.0.1:65209
+1549164717279	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.JN0vysQo8BrU"
+1549164717578	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549164718696	Marionette	INFO	Enabled via --marionette
+[Child 12556] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12556] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549164726443	Marionette	INFO	Listening on port 1091
+1549164726904	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549164726948	Marionette	DEBUG	Register listener.js for window 4294967297
+1549164726987	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549164727505	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549164727505	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549164728583	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549164729629	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549164731451	Marionette	DEBUG	Register listener.js for window 4294967304
+1549164738530	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1549164955949	geckodriver	INFO	geckodriver 0.19.0
+1549164955956	geckodriver	INFO	Listening on 127.0.0.1:29773
+1549164959054	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.GdKYX1yTucCl"
+1549164959362	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549164960373	Marionette	INFO	Enabled via --marionette
+[Child 8832] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8832] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549164967905	Marionette	INFO	Listening on port 30129
+1549164968566	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549164968610	Marionette	DEBUG	Register listener.js for window 4294967297
+1549164969086	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549164969917	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549164969918	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549164971507	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549164972913	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549164978629	Marionette	DEBUG	Register listener.js for window 4294967304
+1549164980904	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1549165014152	Marionette	INFO	New connections will no longer be accepted
+1549165044142	geckodriver	INFO	geckodriver 0.19.0
+1549165044149	geckodriver	INFO	Listening on 127.0.0.1:40385
+1549165047216	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.ipBEiHOwL8vy"
+1549165047510	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549165048458	Marionette	INFO	Enabled via --marionette
+[Child 8320] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549165053819	Marionette	INFO	Listening on port 40756
+1549165054620	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549165054657	Marionette	DEBUG	Register listener.js for window 4294967297
+1549165054686	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549165055435	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549165055436	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549165056212	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549165057194	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549165057668	Marionette	DEBUG	Register listener.js for window 4294967304
+1549165065637	Marionette	INFO	New connections will no longer be accepted
+[Parent 13048] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5064] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549165311064	geckodriver	INFO	geckodriver 0.19.0
+1549165311070	geckodriver	INFO	Listening on 127.0.0.1:8004
+1549165314138	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.3ZS0anfbM4NL"
+1549165314430	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549165315580	Marionette	INFO	Enabled via --marionette
+[Parent 8572] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11564] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11564] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549165321391	Marionette	INFO	Listening on port 8395
+1549165321593	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549165321628	Marionette	DEBUG	Register listener.js for window 4294967297
+1549165321657	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549165322666	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549165322667	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549165323422	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549165324314	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549165324688	Marionette	DEBUG	Register listener.js for window 4294967304
+1549165332853	Marionette	INFO	New connections will no longer be accepted
+[Parent 8572] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549165949316	geckodriver	INFO	geckodriver 0.19.0
+1549165949324	geckodriver	INFO	Listening on 127.0.0.1:20051
+1549165952416	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.e3owWxtC2u9a"
+1549165952742	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549165953790	Marionette	INFO	Enabled via --marionette
+[Parent 5564] WARNING: Failed to launch tab subprocess: file z:/build/build/src/ipc/glue/GeckoChildProcessHost.cpp, line 604
+[Child 2184] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2184] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549165959304	Marionette	INFO	Listening on port 20408
+1549165959770	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549165959812	Marionette	DEBUG	Register listener.js for window 6442450945
+1549165959851	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549165960652	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549165960652	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549165961683	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549165962538	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549165968681	Marionette	DEBUG	Register listener.js for window 6442450952
+1549165972148	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1549166109618	geckodriver	INFO	geckodriver 0.19.0
+1549166109628	geckodriver	INFO	Listening on 127.0.0.1:39288
+1549166112706	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.HY2nPfmnSUDT"
+1549166113029	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1549166114165	Marionette	INFO	Enabled via --marionette
+[Child 11740] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11740] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1549166119754	Marionette	INFO	Listening on port 39683
+1549166120101	Marionette	WARN	TLS certificate errors will be ignored for this session
+1549166120144	Marionette	DEBUG	Register listener.js for window 4294967297
+1549166120176	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1549166124651	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1549166124652	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1549166126463	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.touna.cn/"
+1549166127639	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967301"
+1549166129112	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.touna.cn/"
+1549166131265	Marionette	DEBUG	Register listener.js for window 4294967304
+1549166134935	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1549166180658	Marionette	INFO	New connections will no longer be accepted

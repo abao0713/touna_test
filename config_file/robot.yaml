@@ -1,0 +1,99 @@
+#robot
+login:
+  #<!--登录输入账户的定位点 -->
+  username: xpath=>//input[@type='text']
+  #<!--登录输入密码的定位点 -->
+  password: xpath=>//input[@type='password']
+  #<!--登录确认按钮 -->
+  button: xpath=>//button[@type='button']
+  #<!--登录成功检查点 -->
+  login_success: xpath=>//div[@class='words']
+logout:
+  #<!--登录退出的定位点 -->
+  move: xpath=>//ul[@class='el-menu-demo el-menu--horizontal el-menu']//i[@class='el-submenu__icon-arrow el-icon-arrow-down']
+  logout: xpath=>html/body/div[2]/ul/li[2]
+importcase:
+  #<!--批次管理进入的定位点 -->
+  entry: xpath=>//li[@class='el-submenu is-active']//i[@class='el-submenu__icon-arrow el-icon-arrow-down']
+  #<!--当前批次进入的定位点 -->
+  current: xpath=>//li[contains(text(),'当前批次')]
+  #<!--历史批次进入的定位点 -->
+  history: xpath=>//li[contains(text(),'历史批次')]
+  #<!--暂停批次 -->
+  end_case: xpath=>//span[contains(text(),'暂停批次')]
+  #<!--执行批次 -->
+  statr_case: xpath=>//span[contains(text(),'执行批次')]
+  #<!--取消批次 -->
+  cacel_case: xpath=>//span[contains(text(),'取消批次')]
+  #<!--创建批次 -->
+  create_case: xpath=>//span[contains(text(),'创建批次')]
+  #<!--创建批次之批次名称 -->
+  case_content: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='4']
+  #<!--创建批次之呼叫策略 -->
+  case_strategy: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='5']
+  #<!--创建批次之选择呼叫策略 -->
+  strategy01: xpath=>////span[contains(text(),'权限测试01')]
+  #<!--创建批次之选择线路数量 -->
+  line: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='6']
+  #<!--创建批次之呼叫开始时间 -->
+  call: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='7']
+  time_start: xpath=>//div[@class='el-scrollbar__view']/div[contains(text(),'09:30')]
+  #<!--创建批次之呼叫结束时间 -->
+  call01: xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='8']
+  time_end: 
+  #<!--创建批次之产品类型 -->
+  #xpath=>//input[@type='text'][@class='el-input__inner'][@xpath='9']
+  #<!--查询之批次名称 -->
+  case_name: xpath=>//input[@placeholder='请输入批次名称']
+  #<!--查询之批次状态 -->
+  
+ 
+  #<!--创建批次之发送短信 -->
+  
+  #<!--创建批次之发送频率 -->
+set:
+  #<!--设置进入的定位点 -->
+  entry: xpath=>html/body/div[1]/div/div[1]/div/div[2]/ul/li[7]/div
+  #<!--呼叫规则设置定位点 -->
+  call: xpath=>//li[contains(text(),'呼叫规则设置')]
+  #<!--呼叫规则编辑定位 -->
+  call_edit: xpath=>//div//div//div//div[@class='el-table__fixed-right']//tbody//tr[1]//td[6]//div[1]//button[1]
+  #<!--呼叫规则一天多次定位点 -->
+  call_select: xpath=>//input[@value='1']
+  #<!--呼叫规则编号获取定位点 -->
+  call_num: xpath=>html/body/div[1]/div/div[2]/div[2]/div/div/div[3]/div/form/div[2]/div/div/div
+  #<!--呼叫规则名称获取定位点 -->
+  call_name: xpath=>//input[@type='text']
+  #<!--呼叫规则编辑提交定位点 -->
+  call_submit: xpath=>//span[contains(text(),'确认')]
+  #<!--呼叫规则编辑提交成功定位点 -->
+  call_success: xpath=>//div[@class='el-table__body-wrapper is-scrolling-none']//div[@class='cell'][contains(text(),'呼叫001')]
+  #<!--呼叫规则创建获取定位点 -->
+  call_create: xpath=>//span[contains(text(),'创建呼叫规则')]
+  #<!--跳转规则设置定位点 -->
+  jump: xpath=>//ul/li[@class='el-menu-item is-active']
+  #<!--跳转规则编辑定位 -->
+  jump_edit: xpath=>//div//div//div//div[@class='el-table__fixed-right']//tbody//tr[1]//td[7]//div[1]//button[1]
+  #<!--跳转规则名称获取定位点 -->
+  jump_name: xpath=>//div[contains(@class,'el-form-item is-success is-required el-form-item--small')]//input[contains(@type,'text')]
+  #<!--跳转规则编辑提交定位点 -->
+  jump_submit: xpath=>//div[contains(@class,'dialog_footer')]//button[contains(@type,'button')]
+  #<!--跳转规则编辑提交成功定位点 -->
+  jump_success: xpath=>//div//div//div//div[@class='el-table__body-wrapper is-scrolling-none']//tbody//tr[1]//div[1]//div[1]
+  
+  
+  
+  #<!--停催规则设置定位点 -->
+  stop: xpath=>//li[contains(text(),'停催规则设置')]
+  #<!--客群综合评分设置定位点 -->
+  group: xpath=>//li[contains(text(),'客群综合评分设置')]
+
+  
+  
+  
+  
+  
+  
+  
+  
+  

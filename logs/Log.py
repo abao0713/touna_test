@@ -34,10 +34,12 @@ class Log(object):
         #将log调试信息写入到output.log下文件名固定，文件夹变动
         fh = logging.FileHandler(os.path.join(logPath, "output.log"))
         fh.setLevel(logging.INFO)
+        fh.setLevel(logging.DEBUG)
 
         # 再创建一个handler，用于输出到控制台
         ch = logging.StreamHandler()
         ch.setLevel(logging.INFO)
+        ch.setLevel(logging.DEBUG)
 
         # 定义handler的输出格式
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -81,16 +83,16 @@ class Log(object):
 
     def get_result_path(self):
         """
-        get report file path
+        get result file path
         :return:
         """
         path = os.path.join(proDir, "my_report")
-        report_path = os.path.join(path, "my_report.html")
-        return report_path
+        result_path = os.path.join(path, "my_report.html")
+        return result_path
 
     def get_report_path(self):
         """
-        get test result path
+        get test report path
         :return:
         """
         return logPath
@@ -131,4 +133,5 @@ if __name__ == "__main__":
     Logger = log.get_logger()
     Logger.debug("test debug")
     Logger.info("test info")
+    log.get_report_path()
 

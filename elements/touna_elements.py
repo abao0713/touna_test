@@ -1,16 +1,21 @@
 from common.base_page import *
 import yaml
 from selenium.webdriver.common.keys import Keys
+from logs.Log import MyLog
 
-dir = os.path.dirname(os.path.abspath('.'))  # 注意相对路径获取方法
-file_path = dir + '/config_file/touna.yaml'
+
+log = MyLog.get_log(logger="touna")
+Logger = log.get_logger()
+dir = os.path.dirname(os.path.abspath(__file__)) # 注意相对路径获取方法
+dir_base = os.path.dirname(dir)
+file_path = (dir_base + '/config_file/touna.yaml').replace("\\","/")
 print(file_path)
 with open(file_path,'r',encoding="UTF-8") as file:
 
     try:
         yaml_data = yaml.load(file)
-    except:
-        print("open yaml is no")
+    except Exception as e:
+        print(e)
 print(yaml_data)
 
 class touna(BasePage):
@@ -27,6 +32,7 @@ class touna(BasePage):
         self.usertype_second = yaml_data["login"]["usertype_second"]
         if logo == '1':
             self.find_element(self.usertype_second).click()
+
     # 输入用户名：调用send_keys对象，输入用户名
     def input_username(self, username):
         self.username = yaml_data["login"]["username"]
@@ -35,7 +41,7 @@ class touna(BasePage):
         self.find_element(self.username).click()
         self.find_element(self.username).clear()
         self.find_element(self.username).send_keys(username)
-
+        Logger.info("The test username is: %s" % self.username)
     # 输入密码：调用send_keys对象，输入密码
     def input_password(self, password):
         self.password = yaml_data["login"]["password"]
@@ -44,7 +50,7 @@ class touna(BasePage):
         self.find_element(self.password).click()
         self.find_element(self.password).clear()
         self.find_element(self.password).send_keys(password)
-
+        Logger.info("The password is: %s" % self.password)
     # 点击登录：调用send_keys对象，点击登录
     def click_submit(self):
         self.button = yaml_data["login"]["button"]
