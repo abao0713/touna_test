@@ -1,12 +1,8 @@
 import os
 import codecs
 import configparser
-
 proDir = os.path.abspath(os.path.join(os.path.dirname(__file__),".."))
-
 configPath = os.path.join(proDir, "config_file\config.ini")
-
-
 class ReadConfig:
     def __init__(self):
         fd = open(configPath)

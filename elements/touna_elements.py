@@ -2,8 +2,6 @@ from common.base_page import *
 import yaml
 from selenium.webdriver.common.keys import Keys
 
-
-
 dir = os.path.dirname(os.path.abspath('.'))  # 注意相对路径获取方法
 file_path = dir + '/config_file/touna.yaml'
 print(file_path)
